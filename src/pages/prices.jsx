@@ -1,5 +1,4 @@
 import { motion, useScroll, useTransform } from "framer-motion";
-import { useEffect } from "react";
 
 export default function Prices() {
     const { scrollYProgress } = useScroll();
