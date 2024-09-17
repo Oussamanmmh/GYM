@@ -8,10 +8,10 @@ export default function Prices() {
 
    
     return (
-        <div style={{ height: '200vh' }}> {/* Ensure the parent container is scrollable */}
+        <div style={{ height: '200vh' }} className=" flex flex-col justify-center gap-20"> {/* Ensure the parent container is scrollable */}
             <motion.div className="p-20 relative z-40 pt-40" style={{ y, opacity }} >
                 <motion.div 
-                    className="text-center"
+                    className="text-center space-y-10"
                     initial={{ opacity: 0, y: -50 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5 }}
@@ -24,7 +24,7 @@ export default function Prices() {
                     </ul>
                 </motion.div>
                 <motion.div 
-                    className="flex flex-col md:flex-row justify-around mt-8 gap-10"
+                    className="flex flex-col md:flex-row justify-around mt-8 gap-10 "
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ duration: 0.5, delay: 0.5 }}
