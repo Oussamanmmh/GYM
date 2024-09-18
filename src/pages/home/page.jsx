@@ -28,12 +28,16 @@ export default function Homepage(){
     ]
     return(
         <>
-            <section className={`flex flex-col items-center justify-center gap-20 px-20 py-10 relative min-h-screen bg-cover   `}>
-                <div className='flex flex-col md:flex-row gap-10'>
-                     <div className='flex items-center justify-center md:hidden '>
+            <section className={`flex flex-col items-center justify-center gap-44 px-20 py-10 relative mt-56 mb-56 md:mt-0 md:mb-0 min-h-screen bg-cover   `}>
+                <div className='flex flex-col md:flex-row gap-20'>
+                     <motion.div 
+                      initial={{ opacity: 0, y: -50 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={{ duration: 0.5 }}
+                     className='flex items-center justify-center md:hidden '>
                              <h1 className='font-bold text-3xl font-oswald'>Hello Champ !</h1>
-                             <img src={ahmed} alt="athlet" className=" object-contain  size-52  bottom-0  "/>
-                     </div>
+                             <img src={ahmed} alt="athlet" className=" object-contain  size-72  bottom-0  "/>
+                     </motion.div>
                     <div className='flex flex-col gap-10 '>
                         <motion.h1 
                          initial={{ opacity: 0, y: -50 }}
@@ -64,7 +68,7 @@ export default function Homepage(){
                          animate={{ opacity: 1, y: 0 }}
                          transition={{ duration: 0.5 }}
                         className='flex items-center justify-center gap-20'>
-                              <div className='flex flex-col items-center xl:text-xl '> 
+                              <div className='flex flex-col items-center  xl:text-xl '> 
                                     <span className='font-semibold'>150 +</span>
                                     <span className='text-gray-400'>EXPERT COACHS</span>
                               </div>

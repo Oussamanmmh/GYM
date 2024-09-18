@@ -25,7 +25,7 @@ export default function SideBar({ open, setOpen }) {
         <>
             <aside
                 ref={sidebarRef}
-                className={`fixed top-0 left-0 h-full w-72 bg-primary backdrop-blur-md text-white flex flex-col justify-between items-center gap-10 ${!open ? "-translate-y-full" : "translate-x-0"} transition-all duration-200 ease-in-out`}
+                className={`fixed top-0 left-0 h-full w-72 bg-primary backdrop-blur-md md:hidden sidebar text-white flex flex-col justify-between items-center gap-10 ${!open ? "hidden -translate-y-full" : "block translate-x-0"} transition-all duration-200 ease-in-out`}
             >
                 <div className="flex flex-col gap-10 items-center">
                     <div className="w-20 h-20 rounded-full bg-secondary"></div>
